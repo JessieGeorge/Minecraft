@@ -40,34 +40,6 @@ public class SimpleExample {
 
 	public static void main(String[] args)throws IOException
 	{
-		/* NOTE:
-		 * Code commented for json has errors. 
-		 * Working code for text file is below.
-		JSONParser parser = new JSONParser();
-		
-		try {
-
-            Object obj = parser.parse(new FileReader("out_servers.json"));
-
-            JSONObject jsonObject = (JSONObject) obj;
-            
-            // loop array
-            JSONArray signs = (JSONArray) jsonObject.get("signs");
-            Iterator<String> iterator = signs.iterator();
-            while (iterator.hasNext()) {
-                System.out.print(iterator.next()+" ");
-            }
-            System.out.println();
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-		*/
-	
 		File inputFile = new File("gamerules.txt");
 		String text = Files.toString(inputFile, Charset.forName("UTF-8"));
 		
