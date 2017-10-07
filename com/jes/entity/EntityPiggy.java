@@ -33,8 +33,6 @@ public class EntityPiggy extends EntityAnimal implements IEntityOwnable{
 		//creature and speed
 		this.setSize(1.0F, 1.0F);
 		
-		//this.tasks.addTask(0, new followPlayer(this, 100, 100)); //NOTE: The follow player code was adapted from Srihari's code 
-		
 		this.tasks.addTask(0, new EntityAIWander(this, 0.3D));
 		this.tasks.addTask(1, new EntityAIPanic(this, 0.8D));
 		this.tasks.addTask(2, new EntityAILookIdle(this));
